@@ -1,0 +1,646 @@
+// out: ../css/style.css
+@border: #e5e5e5;
+*{
+    font-size: 14px;
+}
+ul{
+    list-style: none;
+}
+.container{
+    padding: 0 15px;
+    box-sizing: border-box;
+}
+.ivu-tabs{
+    margin-top: 20px;
+}
+.title{
+    position: relative;
+    height: 44px;
+    b{
+        line-height: 44px;
+    }
+    .btn-group{
+        position: absolute;
+        left: 0;
+        top: 0;
+        a{
+            float: left;
+        }
+    }
+}
+.info{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    padding: 10px 0;
+    box-sizing: border-box;
+    margin-top: 10px;
+    border: 1px solid @border;
+    *{
+        float: left;
+        line-height: 24px;
+    }
+    li{
+        width: 300px;
+        padding: 8px 0;
+        label{
+            width: 120px;
+            text-align: right;
+            color: #999;
+        }
+    }
+}
+input,button,select{
+    outline: none !important;
+}
+button{
+    cursor: pointer;
+    background: #fff;
+    border-radius: 4px;
+    border: 0 !important;
+
+}
+.ivu-btn{
+    line-height: 1 !important;
+    &:before,i{
+        display:  none !important;
+    }
+    span{
+        margin-left: 0 !important;
+    }
+}
+.ivu-btn-loading{
+    pointer-events: painted !important;
+}
+.ivu-btn:disabled,.ivu-btn:disabled:hover{
+    background-color: #888;
+    cursor: not-allowed;
+}
+/* 人员管理 */
+.clear{
+    overflow: hidden;
+    clear: both;
+    float: none !important;
+}
+.choicebox{
+    padding: 15px;
+    overflow: hidden;
+    clear: both;
+    margin-bottom:15px;
+    label{
+        padding: 5px 0;
+        margin-right: 10px;
+        &,*{
+            float: left
+        }
+        .ivu-checkbox{
+            margin-top: 5px;
+            margin-right: 7px;
+        }
+    }
+}
+.table{
+    width: 100%;
+    overflow-x: auto;
+    table{
+        min-width: 100%;
+        box-sizing: border-box;
+        td,th{
+            white-space: nowrap;
+            padding: 5px 8px;
+            border-bottom: 1px solid @border;
+        }
+        th{
+            background: #D7E4FF;
+            line-height: 40px;
+            border: 0 !important;
+            text-align: left;
+        }
+        td{
+            line-height: 36px;
+        }
+    }
+}
+table{
+    &,td,th{
+        border-collapse: collapse;
+    }
+    td,th{
+        padding: 5px;
+    }
+}
+input,select{
+    border: 1px solid @border;
+    border-radius: 4px;
+    padding: 5px;
+    height: 30px;
+}
+.form{
+    width:100%;
+    padding: 10px;
+    &,*{
+        box-sizing: border-box;
+    }
+    *{
+        float: left;
+    }
+    li{
+        padding: 5px;
+        width: 50%;
+        padding: 10px 0;
+    }
+    label{
+        width: 120px;
+        text-align: right;
+        margin-right: 10px;
+        line-height: 36px;
+    }
+    .require{
+        label::before{
+            content: '*';
+            color: red;
+        }
+    }
+    input,select{
+        width: 240px;
+    }
+    .lang{
+        width: 100%;
+        input{
+            width: 615px;
+        }
+    }
+    .orange{
+        color: #ff6600;
+        width: 100%;
+        font-size: 12px;
+        margin-top: 8px;
+        margin-left: 110px;
+    }
+}
+.ivu-btn-primary span{
+    color: #fff !important;
+}
+.ivu-form-item-error-tip{
+    font-size: 14px !important;
+}
+.ivu-table-wrapper{
+    margin-top: 20px;
+    border: 0;
+}
+.ivu-table th{
+    background: #D7E4FF;
+}
+.ivu-table-border td, .ivu-table-border th{
+    border-right: 0;
+}
+.ivu-table:after{
+    background: #fff;
+}
+#echart{
+    width: 1200px;
+    height: 200px;
+    margin-bottom: 20px;
+}
+/* 排班表格 */
+.postformtable{
+    margin-top: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+    table{
+        min-width: 100%;
+        th,td{
+            width: 80px;
+            height: 40px;
+            min-width: 70px;
+            border: 2px solid #fff;
+            span{
+                display: block;
+                width: 100%;
+                text-align: center;
+            }
+        }
+        th{
+            color: #fff;
+            background: #767C85;
+            min-width: 70px;
+            span{
+                color: #fff;
+            }
+        }
+        td{
+            background: #DCDEE0;
+        }
+    }
+    .left{
+        width: 320px;
+        float: left;
+        margin-right: 2px;
+        table{
+            width: 100%;
+        }
+        th{
+            height: 80px;
+        }
+        th,td{
+            box-sizing: border-box;
+            width: 25%;
+        }
+        .inner{
+            overflow: hidden;
+            padding-bottom: 17px;
+        }
+    }
+    .right{
+        float: left !important;
+        margin-left: -2px;
+        overflow: hidden;
+        .head{
+            overflow: hidden;
+        }
+    }
+    .inner{
+        max-height: 500px;
+        overflow: auto;
+    }
+}
+.planTable{
+    overflow: auto;
+    max-height: 500px;
+}
+.scheduleForm{
+    td{
+        text-align: center;
+    }
+    th{
+        p{
+            *{
+                color: #f0f0f0;
+                line-height: 24px;
+            }
+        }
+    }
+}
+.selectbutton{
+    .icon-5{
+        margin-left: 10px;
+    }
+}
+.tabItem{
+    display: inline-block;
+    margin-left: 10px;
+}
+/* 模态框 */
+.ivu-modal-confirm-body{
+    margin-top: -20px;
+    padding-top: 20px;
+    .ivu-icon-help-circled{
+        color: #f90;
+        font-size: 26px;
+        margin-left: 15px;
+    }
+    p{
+      font-size: 14px;
+      line-height: 24px;
+    }
+  }
+  /* 站务员列表 */
+  #usersModal{
+    .btnDefault{
+        margin: 10px;
+    }
+    .userList{
+        overflow: hidden;
+        clear: both;
+        span{
+            float: left;
+            width: 70px;
+            text-align: center;
+            line-height: 30px;
+            margin: 5px 10px;
+            border: 1px solid @border;
+            cursor: pointer;
+            border-radius: 4px;
+        }
+        .selected{
+            background: #3A6BCE;
+            border-color: #3A6BCE;
+            color: #fff;
+        }
+        .active{
+            border-color: #ff6600;
+            color: #ff6600;
+            background: #fff;
+        }
+    }
+    .shiftsList{
+        span{
+            border: 0;
+        }
+    }
+  }
+  .td-active{
+      background: #f6f6f6 !important;
+  }
+  #btnChange{
+      position: absolute;
+      z-index: 100;
+  }
+  .deleteItem{
+      background: red;
+      color: #fff !important;
+      padding: 5px 10px;
+      border-radius: 4px;
+  }
+  #shiftTemplate{
+      overflow-x: auto;
+  }
+  /* 工作流程 */
+  .workflowTable{
+      border: 1x solid #666;
+      width: 2300px;
+      table-layout : fixed;
+      text-align: center;
+      th,td{
+          border: 1px solid #666;
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          word-break : keep-all; 
+      }
+      th{
+          line-height: 40px;
+          font-size: 16px;
+      }
+      td{
+          height: 30px;
+      }
+      .gray{
+        background: #aaa !important;
+    }
+  }
+  .btnGroup{
+        position: absolute;
+        z-index: 10;
+        width: 260px;
+        height: 40px;
+        padding: 20px;
+        button{
+            float: left;
+            margin: 5px;
+        }
+        .bgGreen{
+            margin-left: 5px !important;
+        }
+  }
+  .colorSelector{
+      margin-top: 10px;
+      float: left;
+      width: 600px;
+      height: 150px;
+      @border: #666;
+      background: #fff;
+      padding: 20px;
+      box-shadow: 0 0 10px #666;
+      input{
+          width: 560px;
+      }
+      ul{
+          width: 211px;
+          margin-top: 10px;
+          overflow: hidden;
+          clear: both;
+          border-top: 1px solid @border;
+          border-left: 1px solid @border;
+          li{
+              float: left;
+              width: 30px;
+              height: 20px;
+              box-sizing: border-box;
+              border-right: 1px solid @border;
+              border-bottom: 1px solid @border;
+              font-family: "Ionicons";
+              text-align: center;
+              cursor: pointer;
+              &.active::before{
+                  content: "\F121";
+                  color: #333;
+              }
+          }
+      }
+  }
+  .result{
+      width: 100%;
+      margin-top: 10px;
+      *{
+          line-height: 30px;
+      }
+      b{
+        color: #ff6600;
+        padding: 0 5px;
+    }
+  }
+  .red{
+      color: red;
+      *{
+          color: #a32626 !important;
+      }
+  }
+  .title{
+      border-bottom: 1px solid #ddd;
+      line-height: 40px;
+  }
+  //权限管理
+  .permission{
+      border-bottom: 1px solid @border;
+      padding: 10px;
+      overflow: hidden;
+      clear: both;
+      >div{
+          float: left;
+          label{
+              float: left;
+              width: 100%;
+              overflow: hidden;
+              clear: 0;
+              line-height: 28px;
+              input{
+                  float: left;
+                  margin-right:5px;
+              }
+          }
+      }
+    .level1{
+        width: 33%;
+        margin-left: 15%;
+        label{
+            b{
+                color: #000;
+            }
+        }
+    }
+      .level2{
+          width: 40%;
+          label{
+            b{
+                color: #000;
+            }
+        }
+      }
+      .level3{
+          width: 100%;
+          label{
+              margin-left: 20px;
+          }
+      }
+  }
+  //  工作流程
+  .workflowCode{
+      span{
+        display: block;
+        width: 100%;
+        line-height: 30px;
+        cursor: pointer;
+      }
+      input{
+          width: 100%;
+          border: 1px solid @border;
+          padding: 5px;
+          box-sizing: border-box;
+          line-height: 30px;
+      }
+  }
+  .timeTd{
+      cursor: pointer;
+  }
+  .form_line{
+      textarea{
+          padding: 5px;
+          border: 1px solid @border;
+          line-height: 20px;
+          border-radius: 4px;
+      }
+  }
+
+  // 导入年假
+  #selectFile{
+      position: relative;
+      span{
+          margin-left: 10px;
+      }
+  }
+  #holidayFile,#userFile{
+    position: absolute;
+    left: 0;
+    width: 80px;
+    opacity: 0;   
+    filter:alpha(opacity=0);        
+}
+.myTab{
+    width: 100%;
+    overflow: hidden;
+    clear: both;
+    margin-top: 20px;
+    position: relative;
+    .line{
+        width: 100%;
+        height: 1px;
+        font-size: 0;
+        background: @border;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        z-index: 1;
+    }
+    span{
+        float: left;
+        padding: 5px 10px;
+        border: 1px solid @border;
+        border-radius: 4px 4px 0 0;
+        border-bottom: 0;
+        margin-right: 10px;
+        background: #f3f3f3;
+        position: relative;
+        z-index: 1;
+        cursor: pointer;
+    }
+    .active{
+        background: #fff;
+        z-index: 2;
+    }
+}
+.content{
+    width: 100%;
+    border-color: @border;
+    border-radius: 4px;
+}
+.content-header .ivu-input-wrapper,.content-header .ivu-select,.content-header .ivu-date-picker{
+    width: 200px;
+}
+.colorLine .ivu-form-item-label:before {
+    content: '*';
+    display: inline-block;
+    margin-right: 4px;
+    line-height: 1;
+    font-family: SimSun;
+    font-size: 12px;
+    color: #ed3f14;
+}
+.postformtable table th{
+    text-align: center;
+}
+.ivu-table-cell{
+    padding: 0;
+}
+.schedule table{
+    width: 100%;
+    th{
+        span{
+            display: inline;
+        }
+    }
+    td{
+        span{
+            width: 100%;
+        }
+    }
+}
+.ivu-menu-item a{
+    color: #4d4d4d;
+}
+// 手动排班
+.manualSchedule{
+    td>p{
+        cursor: pointer;
+        line-height: 30px;
+    }
+}
+.openTable td{
+    p{
+        display: none;
+        &:nth-child(1){
+            display: block;
+        }
+    }
+}
+.userName p{
+    position: relative;
+    .delete{
+        position: absolute;
+        width: 16px;
+        height: 16px;
+        right: 0px;
+        top: 7px;
+        background-image: url(../img/delete.svg);
+        background-size: 100% 100%;
+        display: none;
+        z-index: 100;
+    }
+    &:hover{
+        .delete{
+            display: block;
+        }
+    }
+}
